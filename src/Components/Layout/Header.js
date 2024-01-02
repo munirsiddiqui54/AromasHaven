@@ -75,8 +75,8 @@ const Header = () => {
 
                 <div className="collapse navbar-collapse" id="navbarNav">
                     {
-                        auth.user && auth.user._id === "65355a9e3e19fff66f42a400" ? (<ul className="ms-auto navbar-nav">
-                            <li className="nav-item">
+                        auth.user && auth.user.role === 1 ? (<ul className="ms-auto navbar-nav">
+                              <li className="nav-item">
                                 <NavLink to='/dashboard/products' className="nav-link" aria-current="page">Products</NavLink>
                             </li>
                             <li className="nav-item">
