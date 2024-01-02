@@ -161,8 +161,14 @@ const Checkout = () => {
                         </div>
                         <div className="col-md-8 order-md-1">
                             <h4 className="mb-3">Shipping address</h4>
-                            <form className="needs-validation" onSubmit={(e) => { e.preventDefault(); if (paymentoption != 1) { setVisible(true); } }}>
-                                <div className="row">
+                               <form className="needs-validation" onSubmit={(e) => {
+                                e.preventDefault();
+                                if (phone?.length < 10) {
+                                    toast("Enter correct Phone number");
+                                    return;
+                                }
+                                if (paymentoption != 1) { setVisible(true); }
+                            }}>  <div className="row">
                                     <div className="col-md-6 mb-3">
                                         <label htmlFor="firstName">First name</label>
                                         <input type="text" className="form-control" id="firstName" placeholder={'First Name'} value={fname} onChange={e => setFname(e.target.value)} required />
@@ -176,7 +182,7 @@ const Checkout = () => {
                                 <div className="mb-3">
                                     <label htmlFor="Phone Number">Phone Number</label>
                                     <div className="input-group">
-                                        <input type="text" className="form-control" id="Phone Number" value={phone} onChange={e => setPhone(e.target.value)} placeholder="Phone Number" required />
+                                        <input type="number" className="form-control" id="Phone Number" value={phone} onChange={e => setPhone(e.target.value)} placeholder="Phone Number" required />
                                     </div>
                                 </div>
                                 <div className="mb-3">
