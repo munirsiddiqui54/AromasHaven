@@ -1,6 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This is Aromas Haven 
+This repository is for FrontEnd
+For Backend: https://github.com/munirsiddiqui54/AromasServer
 
 ## Available Scripts
 
