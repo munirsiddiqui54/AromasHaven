@@ -1,5 +1,5 @@
 ## This is Aromas Haven 
-This repository is for FrontEnd
+This repository is for FrontEnd.\
 For Backend: https://github.com/munirsiddiqui54/AromasServer
 
 ## Available Scripts
