@@ -110,7 +110,7 @@ const Home = () => {
                                     '')
                                 :
                                 <div style={{ height: '30vh' }}>
-                                    <p>Product Not Found</p>
+                                    <p>No Products added</p>
                                 </div>
                             }
                         </div>

@@ -202,7 +202,7 @@ const Checkout = () => {
                                         <input id="pod" name="paymentMethod" type="radio" onChange={e => setPaymentoption("pod")} className="form-check-input mx-2" style={{ border: '1px solid gray' }} defaultChecked required />
                                         <label className="custom-control-label" htmlFor="pod"> Pay on Delivery </label>
                                     </div>
-                                    <div className="custom-control mt-2 custom-radio">
+                                    {/* <div className="custom-control mt-2 custom-radio">
                                         <input id="card" name="paymentMethod" type="radio" onChange={e => setPaymentoption("card")} className="form-check-input mx-2" style={{ border: '1px solid gray' }} required />
                                         <label className="custom-control-label  me-5" htmlFor="card" >Card</label>
 
@@ -218,7 +218,7 @@ const Checkout = () => {
                                                     token={payNow}
                                                 /> : ''
                                         }
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <hr className="mb-4" />
